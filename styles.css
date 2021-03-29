@@ -1,0 +1,96 @@
+/*Universal Styles*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.main{
+    background-color: white;
+}
+button{
+    background-color: rgb(255, 239, 21);
+    height: 3rem;
+    width: 8rem;
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0 / 50%);
+}
+
+/*Header*/
+.main-header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-style: normal
+}
+.header-name{
+    margin-left: 5rem;
+}
+.nav{
+    margin-right: 5rem;;
+}
+.nav span{
+    margin-right: 2rem;
+    
+}
+.nav a{
+    color: inherit;
+}
+
+
+/*About Me*/
+.about-me{
+    background-image: url("./images/about-background.JPG");
+    background-position: center;
+    height: 600px;
+}
+.banner{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.banner-content{
+    padding-top: 13rem;
+}
+.about-me h1{
+    font-family: "Fugaz One", Arial;
+    color: white;
+    text-align: center;
+}
+.banner-info{
+    width: 37rem;
+    margin: 2rem auto;
+}
+.about-me p{
+    color: white;
+}
+
+/*Portfolio*/
+.portfolio{
+    height: 500px;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+}
+.project{
+    max-width: 300px;
+    margin: 5rem 0;
+    display: inline-block;
+}
+.project img{
+    max-width: 15rem;
+}
+
+/*Contact*/
+.contact{
+    background-color: rgba(52, 52, 126, 0.712);
+    height: 300px;
+}
