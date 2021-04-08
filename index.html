@@ -3,8 +3,11 @@
     <head>
         <title>Nick Shryock | Web Services</title>
         <link rel="stylesheet" type="text/css" href="./styles.css">
-        <link rel="shortcut icon" type="image/x-icon" href="./images/NS Logo 1.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./images/Logo 2 cropped.png">
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <header>
@@ -18,11 +21,21 @@
             </div>
         </header>
         <div class="main">
+            <div class="title">
+                <div class="title-logo">
+                    <img src="./images/Logo 2 cropped.png">
+                </div>
+                <div>
+                    <h1>Nick Shryock | Web Services</h1>
+                </div>  
+            </div>
+            
             <div id="about-me" class="about-me container">
                 <div class="banner">
-                    <div class="banner-content">
+                    <img src="./images/about-me photo.jpg">
+                    <div class="banner-content">  
                         <div class="banner-header">
-                            <h1>Nick Shryock Web Services</h1>
+                            <h2>Who I am</h2>
                         </div>
                         <div class="banner-info">
                             <p>
@@ -30,32 +43,43 @@
                                 services with a unique background to take on large scale projects. If you 
                                 are a business with web development needs or are looking to hire, let's get in touch.
                             </p>
-                            <button>Contact</button>
                         </div>
+                         <button id="button">Contact</button>
                     </div>
                     
                 </div>
             </div>
+            <script>
+                let section1 = document.getElementById('about-me');
+                let colorChange = function() {
+                    section1.style.backgroundColor = 'green';
+                };
+                section1.onkeydown = colorChange;
+            </script>
             <div id="portfolio" class="portfolio container">
-                <div class="projects container">
-                    <div class="project a">
-                        <img src="./images/project a.jpg">
-                        <h2>Super Bowl Prop Bets</h2>
-                        <p>Sign-up, pay, and experience America's biggest event in a whole new way.</p>
-                        <button>Visit Site</button>
-                    </div>
-                    <div class="project b">
-                        <img src="./images/project b.JPG">
-                        <h2>Photography Portfolio</h2>
-                        <p>Sign-up, pay, and track your position for the America's biggest event</p>
-                        <button>Visit Site</button>
-                    </div>
-                    <div class="project c">
-                        <img src="./images/project c.JPG">
-                        <h2>Cameras & Beer Community</h2>
-                        <p>Orange County community to share the joy of photography and craft beer</p>
-                        <button>Visit Site</button>
-                    </div>
+                <div id="left-arrow"></div>
+                <div class="project-viewer">
+                    <div class="project-container">
+                        <div class="project a">
+                            <img src="./images/project a.jpg">
+                            <h2>Super Bowl Prop Bets</h2>
+                            <p>Sign-up, pay, and experience America's biggest event in a whole new way.</p>
+                            <button>Visit Site</button>
+                        </div>
+                        <div class="project b">
+                            <img src="./images/project b.JPG">
+                            <h2>Photography Portfolio</h2>
+                            <p>Sign-up, pay, and track your position for the America's biggest event</p>
+                            <button>Visit Site</button>
+                        </div>
+                        <div class="project c">
+                            <img src="./images/project c.JPG">
+                            <h2>Cameras & Beer Community</h2>
+                            <p>Orange County community to share the joy of photography and craft beer</p>
+                            <button>Visit Site</button>
+                        </div>
+                    </div>  
+                    <div id="right-arrow"></div>
                 </div>
 
             </div>

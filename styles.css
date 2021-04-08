@@ -5,9 +5,11 @@ html{
 }
 body{
     margin: 0;
+    box-sizing: border-box;
 }
 .main{
     background-color: white;
+    padding-top: 5rem;
 }
 button{
     background-color: rgb(255, 239, 21);
@@ -27,66 +29,120 @@ button{
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
-    font-style: normal
+    font-style: normal;
+    z-index: 5;
 }
 .header-name{
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 .nav{
     margin-right: 5rem;;
 }
 .nav span{
-    margin-right: 2rem;
+    margin-right: 1rem;
     
 }
 .nav a{
     color: inherit;
 }
 
-
 /*About Me*/
+.title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 500px;
+    border-bottom: rgba(99, 96, 96, 0.699) 2px solid;
+    justify-content: center;
+    padding-top: inherit;
+}
+.title img{;
+    max-width: 20rem;
+    margin-right: 10rem;
+}
+.title h1{
+    
+    font-family: "Playfair Display";
+    font-size: 2.5rem;
+}
 .about-me{
-    background-image: url("./images/about-background.JPG");
-    background-position: center;
-    height: 600px;
+    width: 100%;
+    height: 500px;
+    padding-top: inherit;
 }
 .banner{
-    background-color: rgba(0, 0, 0, 0.75);
     height: 100%;
     width: 100%;
-    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: rgba(99, 96, 96, 0.699) 2px solid;
+    
 }
 .banner-content{
-    padding-top: 13rem;
+    max-width: 700px;
+    padding: 0 2rem;
+}
+.banner img{
+    max-width: 20rem;
+    height: auto;
+    align-self: center;
+    box-shadow: -2rem -2rem rgb(100, 139, 96);
+    margin: 0 1rem;
 }
 .about-me h1{
     font-family: "Fugaz One", Arial;
-    color: white;
     text-align: center;
 }
-.banner-info{
-    width: 37rem;
-    margin: 2rem auto;
+.banner-header{
+
 }
 .about-me p{
-    color: white;
 }
 
 /*Portfolio*/
 .portfolio{
     height: 500px;
+    position: relative;
+    padding-top: inherit;
 }
-.projects{
-    display: flex;
-    justify-content: space-around;
+.project-viewer{
+    position: absolute;
+    left: 0;
+    width: 1200px;
+}
+.project-container{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
 }
 .project{
+    float: left;
+    display: block;
     max-width: 300px;
-    margin: 5rem 0;
-    display: inline-block;
+    margin: 2rem;
+    
 }
 .project img{
     max-width: 15rem;
+}
+#left-arrow{
+    width: 1rem;
+    height: 3rem;
+    background-color: grey;
+    position: absolute;
+    left: 0;
+}
+#right-arrow{
+    width: 1rem;
+    height: 3rem;
+    background-color: grey;
+    position: absolute;
+    right: 0;
 }
 
 /*Contact*/
