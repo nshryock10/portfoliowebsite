@@ -7,7 +7,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-        <script src="./js/script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <header>
@@ -44,37 +46,40 @@
                                 are a business with web development needs or are looking to hire, let's get in touch.
                             </p>
                         </div>
-                         <button id="button">Contact</button>
+                         <button type="button" id="button">Contact</button>
                     </div>
-                    
                 </div>
             </div>
             <div id="portfolio" class="portfolio container">
-                <div id="left-arrow"></div>
                 <div class="project-viewer">
                     <div class="project-container">
-                        <div class="project a">
+                        <div id="left-arrow">
+                            <img class="arrow" src="./images/arrow.png">
+                        </div>
+                        <div id="a" class="project a">
                             <img src="./images/project a.jpg">
                             <h2>Super Bowl Prop Bets</h2>
                             <p>Sign-up, pay, and experience America's biggest event in a whole new way.</p>
                             <button>Visit Site</button>
                         </div>
-                        <div class="project b">
+                        <div id="b" class="project b">
                             <img src="./images/project b.JPG">
                             <h2>Photography Portfolio</h2>
-                            <p>Sign-up, pay, and track your position for the America's biggest event</p>
+                            <p>Come and see the other way I see the world, through digital and analog images.</p>
                             <button>Visit Site</button>
                         </div>
-                        <div class="project c">
+                        <div id="c" class="project c">
                             <img src="./images/project c.JPG">
                             <h2>Cameras & Beer Community</h2>
                             <p>Orange County community to share the joy of photography and craft beer</p>
                             <button>Visit Site</button>
                         </div>
+                        <div id="right-arrow">
+                            <img class="arrow" src="./images/arrow.png">
+                        </div>
                     </div>  
-                    <div id="right-arrow"></div>
+                    
                 </div>
-
             </div>
             <div id="contact-me" class="contact container">
                 <h2>Let's get in touch</h2>
@@ -94,9 +99,10 @@
                         <label for="name">Message</label>
                         <input type="text" id="message" name="message">
                     </div>
-
+                    
                 </form>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -105,44 +105,52 @@ button{
 /*Portfolio*/
 .portfolio{
     height: 500px;
-    position: relative;
+    margin: 0 auto;
+}
+
+.project-container{
+    max-width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: inherit;
 }
-.project-viewer{
-    position: absolute;
-    left: 0;
-    width: 1200px;
+.project {
+    max-width: 1100px;
+    margin: 4rem;
+    display: flex;
 }
-.project-container{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    overflow: hidden;
-}
-.project{
-    float: left;
-    display: block;
-    max-width: 300px;
-    margin: 2rem;
-    
+.project p{
+    max-width: 400px;
 }
 .project img{
-    max-width: 15rem;
+    max-width: 20rem;
+}
+.a {
+    display: inline-block;
+}
+.b {
+    display: none;
+}
+.c {
+    display: none;
 }
 #left-arrow{
-    width: 1rem;
-    height: 3rem;
-    background-color: grey;
-    position: absolute;
-    left: 0;
+    width: 3rem;
+    height: 20rem;
+    background-color: rgba(128, 128, 128, 0.034);
+    transform: rotate(180deg);
 }
 #right-arrow{
-    width: 1rem;
-    height: 3rem;
-    background-color: grey;
-    position: absolute;
-    right: 0;
+    width: 3rem;
+    height: 20rem;
+    background-color: rgba(128, 128, 128, 0.034);
+}
+.arrow{
+    max-width: 3rem;
+    margin-top: 8.5rem;
 }
 
 /*Contact*/
