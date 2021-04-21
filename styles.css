@@ -2,6 +2,11 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -11,13 +16,20 @@ body{
     background-color: white;
     padding-top: 5rem;
 }
-button{
-    background-color: rgb(255, 239, 21);
+button, input[type=submit]{
+    background-color: white;;
     height: 3rem;
     width: 8rem;
-    border-radius: 5rem;
-    border: none;
+    border: 3px solid rgba(0, 0, 0, 0.808);
     box-shadow: 0 2px 3px rgba(0, 0, 0 / 50%);
+}
+.border-container {
+    width: 100%;
+    border-bottom: rgba(99, 96, 96, 0.699) 2px solid;
+}
+.large-container {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 /*Header*/
@@ -49,23 +61,21 @@ button{
 /*About Me*/
 .title {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     max-width: 100%;
     height: 500px;
-    border-bottom: rgba(99, 96, 96, 0.699) 2px solid;
-    justify-content: center;
     padding-top: inherit;
 }
-.title img{;
+.title-logo img{;
     max-width: 20rem;
-    margin-right: 10rem;
+    margin-right: 2rem;
 }
 .title h1{
-    
     font-family: "Playfair Display";
     font-size: 2.5rem;
+    margin-left: 2rem;
 }
 .about-me{
     width: 100%;
@@ -77,9 +87,7 @@ button{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    border-bottom: rgba(99, 96, 96, 0.699) 2px solid;
-    
+    align-items: center; 
 }
 .banner-content{
     max-width: 700px;
@@ -90,26 +98,20 @@ button{
     height: auto;
     align-self: center;
     box-shadow: -2rem -2rem rgb(100, 139, 96);
-    margin: 0 1rem;
 }
 .about-me h1{
     font-family: "Fugaz One", Arial;
     text-align: center;
 }
-.banner-header{
-
-}
-.about-me p{
-}
 
 /*Portfolio*/
 .portfolio{
-    height: 500px;
+    height: 550px;
     margin: 0 auto;
 }
 
 .project-container{
-    max-width: 1200px;
+    max-width: 100%;
     height: inherit;
     margin: 0 auto;
     display: flex;
@@ -155,6 +157,108 @@ button{
 
 /*Contact*/
 .contact{
-    background-color: rgba(52, 52, 126, 0.712);
-    height: 300px;
+    height: 500px;
+    padding-top: inherit;
+    max-width: 100%;
+    margin: 0 auto;
 }
+.contact h2{
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+    max-width: inherit;
+}
+.contact-container img{
+    max-width: 35%;
+    height: 100%;
+    margin: 0 2rem;
+    box-shadow: -2rem -2rem rgb(165, 142, 99);
+}
+.img-overlay {
+    background-color: rgba(0, 0, 0, 0.45);  
+}
+/* Form Styles */
+.form-container{
+    width: 60%;
+}
+.row{
+    display: table;
+    width: 100%;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+#form-btn {
+    float: right;
+}
+
+
+/* Footer */
+footer{
+    background-image: url("./images/footer-handhold.jpg");
+    background-position: 50% 55%;
+    background-size: cover;
+    height: 400px;
+    
+}
+.footer-contents{
+    background-color: rgba(0, 0, 0, 0.45);
+    margin: 0;
+    height: 100%;
+    color: white;
+}
+.footer-contents p{
+    position: relative;
+    left: 40%;
+    top: 30%;
+    margin: 0 auto;
+}
+.social {
+    background-color: grey;
+    max-width: 3rem;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.instagram {
+    position: relative;
+    left: 48%;
+    top: 25%;
+    background-image: url("./images/instagram.png");
+    background-color: grey;
+    background-size: contain;
+}
+.linkedin{
+    position: relative;
+    left: 52%;
+    top: 15%; 
+    background-image: url("./images/linkedin.png");
+    background-color: grey;
+    background-size: contain;
+}
+.social img{
+    max-width: inherit;   
+    background-color: grey;
+}
+
