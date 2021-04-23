@@ -68,7 +68,7 @@ button, input[type=submit]{
     height: 500px;
     padding-top: inherit;
 }
-.title-logo img{;
+.title-logo img{
     max-width: 20rem;
     margin-right: 2rem;
 }
@@ -103,13 +103,16 @@ button, input[type=submit]{
     font-family: "Fugaz One", Arial;
     text-align: center;
 }
+#small-header{
+    display: none;
+}
 
 /*Portfolio*/
 .portfolio{
     height: 550px;
     margin: 0 auto;
+    padding-top: inherit;
 }
-
 .project-container{
     max-width: 100%;
     height: inherit;
@@ -117,27 +120,32 @@ button, input[type=submit]{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: inherit;
+    padding-top: 4rem;
+    position: relative;
 }
 .project {
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 4rem;
-    display: flex;
 }
 .project p{
     max-width: 400px;
+    
 }
 .project img{
     max-width: 20rem;
 }
 .a {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
 }
 .b {
     display: none;
 }
 .c {
     display: none;
+}
+.project-info{
+    margin-left: 2rem;
 }
 #left-arrow{
     width: 3rem;
@@ -213,7 +221,6 @@ label {
     float: right;
 }
 
-
 /* Footer */
 footer{
     background-image: url("./images/footer-handhold.jpg");
@@ -224,35 +231,31 @@ footer{
 }
 .footer-contents{
     background-color: rgba(0, 0, 0, 0.45);
-    margin: 0;
     height: 100%;
     color: white;
 }
 .footer-contents p{
-    position: relative;
-    left: 40%;
-    top: 30%;
     margin: 0 auto;
+    text-align: center;
+}
+.social-links{
+    width: 100%;
+    padding-left: 40%;
 }
 .social {
+    display: inline-block;
     background-color: grey;
     max-width: 3rem;
-    position: relative;
     width: 2.5rem;
     height: 2.5rem;
+    margin: 0 2rem;
 }
 .instagram {
-    position: relative;
-    left: 48%;
-    top: 25%;
     background-image: url("./images/instagram.png");
     background-color: grey;
     background-size: contain;
 }
 .linkedin{
-    position: relative;
-    left: 52%;
-    top: 15%; 
     background-image: url("./images/linkedin.png");
     background-color: grey;
     background-size: contain;
@@ -262,3 +265,76 @@ footer{
     background-color: grey;
 }
 
+@media screen and (max-width: 800px) {
+    .title-logo img{
+        display: none;
+    }
+    .title{
+        height: 200px;
+    }
+    .about-me{
+        height: 510px;
+    }
+    .banner{
+        display: block;
+    }
+    .banner img{
+        padding-top: 1rem;
+        max-width: 13rem;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 1rem 1rem rgb(100, 139, 96);
+    }
+    .banner-content{
+        padding: 0;
+    }
+    .banner-content button{
+        display: block;
+        margin: 0 auto;
+    }
+    #large-header{
+        max-width: 80%;
+    }
+    .portfolio{
+        height: 1450px;
+    }
+    .project-container{
+        padding-top: 0;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .project{
+        margin: 1rem auto;
+        text-align: center;
+        background-color: rgba(100, 139, 96, 0.829);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .project-info{
+        margin: 0;
+    }
+    .project p{
+        text-align: left;
+    }
+    .a{
+        display: block;
+    }
+    .b{
+        display: block;
+    }
+    .c{
+        display: block;
+    }
+    #left-arrow{
+        display: none;
+    }
+    #right-arrow{
+        display: none;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .contact-container img{
+        display: none;
+    }
+}

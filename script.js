@@ -22,30 +22,30 @@ function toggleRight() {
     let projADisplay = getComputedStyle(projA).display;
     let projBDisplay = getComputedStyle(projB).display;
     let projCDisplay = getComputedStyle(projC).display;
-    if(projADisplay === "block"){
+    if(projADisplay === "flex"){
         projA.style.display = 'none';
-        projB.style.display = 'block';
-    }else if(projBDisplay === "block"){
+        projB.style.display = 'flex';
+    }else if(projBDisplay === "flex"){
         projB.style.display = 'none';
-        projC.style.display = 'block';
-    }else if(projCDisplay === "block"){
+        projC.style.display = 'flex';
+    }else if(projCDisplay === "flex"){
         projC.style.display = 'none';
-        projA.style.display = 'block';
+        projA.style.display = 'flex';
     }
 }
 function toggleLeft() {
     let projADisplay = getComputedStyle(projA).display;
     let projBDisplay = getComputedStyle(projB).display;
     let projCDisplay = getComputedStyle(projC).display;
-    if(projADisplay === "block"){
+    if(projADisplay === "flex"){
         projA.style.display = 'none';
-        projC.style.display = 'block';
-    }else if(projCDisplay === "block"){
+        projC.style.display = 'flex';
+    }else if(projCDisplay === "flex"){
         projC.style.display = 'none';
-        projB.style.display = 'block';
-    }else if(projBDisplay === "block"){
+        projB.style.display = 'flex';
+    }else if(projBDisplay === "flex"){
         projB.style.display = 'none';
-        projA.style.display = 'block';
+        projA.style.display = 'flex';
     }
 }
 function btnHover() {
