@@ -65,7 +65,8 @@ button, input[type=submit]{
     align-items: center;
     margin: 0 auto;
     max-width: 100%;
-    height: 500px;
+    height: auto;
+    min-height: 100% !important;
     padding-top: inherit;
 }
 .title-logo img{
@@ -79,8 +80,10 @@ button, input[type=submit]{
 }
 .about-me{
     width: 100%;
-    height: 500px;
+    height: auto;
+    min-height: 100% !important;
     padding-top: inherit;
+    margin: 3.5rem auto;
 }
 .banner{
     height: 100%;
@@ -270,10 +273,12 @@ footer{
         display: none;
     }
     .title{
-        height: 200px;
+        min-height: 200px;
     }
     .about-me{
-        height: 510px;
+        height: auto;
+        min-height: 100% !important;
+        margin: 1rem;
     }
     .banner{
         display: block;
@@ -296,7 +301,8 @@ footer{
         max-width: 80%;
     }
     .portfolio{
-        height: 1450px;
+        height: auto;
+        min-height: 100% !important;
     }
     .project-container{
         padding-top: 0;
@@ -309,6 +315,10 @@ footer{
         background-color: rgba(100, 139, 96, 0.829);
         border-radius: 10px;
         padding: 1rem;
+        
+    }
+    .project img{
+        width: 100%;
     }
     .project-info{
         margin: 0;
